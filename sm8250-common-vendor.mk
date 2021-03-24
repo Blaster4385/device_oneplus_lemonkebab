@@ -1142,7 +1142,6 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libthermalclient \
     CneApp \
-    IFAAService \
     IWlanService \
     TimeService \
     com.oneplus.gpudrivers.kona.api30 \
@@ -1152,6 +1151,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON \
     NQNfcNci \
     QtiTelephonyService \
+    IFAAService \
     WfdService \
     ims \
     qcrilmsgtunnel \
