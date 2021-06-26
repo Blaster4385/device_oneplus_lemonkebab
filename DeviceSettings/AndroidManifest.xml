@@ -77,6 +77,18 @@
             </intent-filter>
         </service>
 
+         <!-- DC-Dimming Tile -->
+        <service
+            android:name="org.havoc.device.DeviceSettings.DCModeTileService"
+            android:icon="@drawable/ic_dc_mode"
+            android:label="@string/tile_dc_mode"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+
         <!-- HBM Service -->
         <service android:name="org.havoc.device.DeviceSettings.HBMModeService"
                  android:exported="false" />

@@ -28,7 +28,8 @@
     <string name="auto_hbm_threshold_summary"></string>
     <string name="tile_hbm_mode">High brightness mode</string>
     <string name="dc_mode_summary"></string>
-    <string name="dc_mode_title">Automatic DC-Dimming mode</string>
+    <string name="dc_mode_title">DC-Dimming</string>
+    <string name="tile_dc_mode">DC-Dimming</string>
 
     <!-- Dolby -->
     <string name="dolby_category">Dolby</string>
