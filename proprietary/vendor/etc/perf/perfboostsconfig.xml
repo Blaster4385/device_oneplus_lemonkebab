@@ -107,8 +107,8 @@
         <!-- CPUBOOST_MIN_FREQ PRIME Core resource opcode, value-->
         <Config
             Id="0x00001083" Enable="true" Timeout="400" Target="kona"
-            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xFFF,
-                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xFFF" />
+            Resources="0x40804000, 0xFFF, 0x40804100, 0xFFF, 0x40804200, 0xB18,
+                       0x40800000, 0xFFF, 0x40800100, 0xFFF, 0x40800200, 0xB18" />
 
     <!--Vertical Scroll boost-->
         <!-- LLCBW_MIN_FREQ resource opcode, value-->
