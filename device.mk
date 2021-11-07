@@ -453,14 +453,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/odm_feature_list:$(TARGET_COPY_OUT_ODM)/etc/odm_feature_list
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service \
-    android.hardware.power.stats@1.0-service.mock \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
-
 # QMI
 $(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
@@ -479,6 +471,7 @@ TARGET_BOARD_PLATFORM := kona
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     audio \
+    perf \
     wfd
 
 # RIL
