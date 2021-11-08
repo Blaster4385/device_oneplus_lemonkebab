@@ -521,6 +521,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     RemovePackages
 
+# QTI components
+TARGET_BOARD_PLATFORM := kona
+
 # RIL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
