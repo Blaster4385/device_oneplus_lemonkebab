@@ -790,6 +790,7 @@ system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
 vendor/etc/system_properties.xml
+vendor/lib/libmmosal.so
 vendor/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/lib/libFileMux_proprietary.so
@@ -853,7 +854,6 @@ vendor/lib/libOmxMpeghEncSw.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxSwVdec.so
 vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libOmxWmaDec.so
 vendor/lib/libswvdec.so
