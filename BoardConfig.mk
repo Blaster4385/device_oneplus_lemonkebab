@@ -174,7 +174,6 @@ TARGET_USES_MKE2FS := true
 
 # RIL
 CUSTOM_APNS_FILE := $(DEVICE_PATH)/configs/apns-conf.xml
-ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)

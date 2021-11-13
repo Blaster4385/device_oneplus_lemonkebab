@@ -339,14 +339,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/gf_input.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/gf_input.idc \
     $(LOCAL_PATH)/keylayout/gf_input.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gf_input.kl
 
-# IPACM
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
-
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
@@ -365,7 +357,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 $(call inherit-product, external/json-c/Android.configure.mk)
 PRODUCT_PACKAGES += \
-    libjson \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -386,21 +377,12 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media-legacy \
     nq-nfc \
     perf \
+    telephony \
     wfd
 
 # RIL
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    librmnetctl \
-    libxml2 \
-    android.system.net.netd@1.1.vendor \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio@1.5 \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2 \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio.deprecated@1.0.vendor \
+    libprotobuf-cpp-full
 
 # Secure Element
 PRODUCT_PACKAGES += \
