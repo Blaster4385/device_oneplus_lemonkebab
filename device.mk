@@ -85,8 +85,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
     frameworks/native/data/etc/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
@@ -204,46 +202,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     libcamera2ndk_vendor 
 
-# Common init scripts
-PRODUCT_PACKAGES += \
-    ftm_power_config.sh \
-    init.class_main.sh \
-    init.crda.sh \
-    init.cust.rc \
-    init.mdm.sh \
-    init.oem.debug.rc \
-    init.oem.minidump.sdx55m.rc \
-    init.oem.rc \
-    init.oem.sec.rc \
-    init.oem_ftm.rc \
-    init.opcamera.rc \
-    init.oplus_chg.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
-    init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.factory.rc \
-    init.qcom.post_boot.sh \
-    init.qcom.rc \
-    init.qcom.sdio.sh \
-    init.qcom.sh \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
-    init.qti.dcvs.sh \
-    init.qti.ims.sh \
-    init.qti.qcv.sh \
-    init.recovery.qcom.rc \
-    init.target.rc \
-    ueventd.qcom.rc \
-    vendor.oem_ftm.rc \
-    vendor.oem_ftm_svc_disable.rc \
-    init.oneplus.display.rc
-
-# Device init scripts
-PRODUCT_PACKAGES += \
-    fstab.qcom
-
 # DeviceSettings
 PRODUCT_PACKAGES += \
     DeviceSettings
@@ -331,7 +289,23 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    libinit_sm8250
+    libinit_sm8250 \
+    fstab.qcom \
+    init.oneplus.camera.rc \
+    init.oneplus.display.rc \
+    init.oneplus.fingerprint.rc \
+    init.oneplus.haptics.rc \
+    init.oneplus.power.rc \
+    init.oneplus.telephony.rc \
+    init.oneplus.usb.rc \
+    init.qti.chg_policy.sh \
+    init.qti.dcvs.sh \
+    init.qti.ufs.rc \
+    init.target.rc \
+    ueventd.oneplus.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -375,10 +349,12 @@ TARGET_COMMON_QTI_COMPONENTS := \
     bt \
     display \
     gps \
+    init \
     media-legacy \
     nq-nfc \
     perf \
     telephony \
+    usb \
     wfd
 
 # RIL
@@ -436,10 +412,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.2-service-qti
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
