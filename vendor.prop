@@ -75,6 +75,9 @@ vendor.product.manufacturer=OPD
 # Perf
 ro.vendor.perf.scroll_opt=true
 
+# QSPM
+ro.vendor.qspm.enable=true
+
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
