@@ -57,13 +57,17 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 NEED_KERNEL_MODULE_SYSTEM := true
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc OEM_TARGET_PRODUCT=$(PRODUCT_DEVICE)
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/oneplus/sm8250
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
-    DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
+    DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
+    OEM_TARGET_PRODUCT=$(PRODUCT_DEVICE) \
+    LLVM=1
+TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_SOURCE := kernel/oneplus/sm8250
+TARGET_KERNEL_CLANG_COMPILE := true
+#TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig
+KERNEL_DEFCONFIG := vendor/kona-perf_defconfig
+#TARGET_KERNEL_ADDITIONAL_FLAGS := \
+#    DTC=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dtc
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
@@ -128,7 +132,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.oneplus_kona
 
 # HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/device_framework_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+     $(DEVICE_PATH)/device_framework_matrix.xml \
+     vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/device_framework_manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml

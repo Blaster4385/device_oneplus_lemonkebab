@@ -496,6 +496,13 @@ vendor/lib64/libStDrvInt.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
+# ESE
+vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
+vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
+vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
+vendor/lib64/vendor.qti.esepowermanager@1.0.so
+vendor/lib64/vendor.qti.esepowermanager@1.1.so
+
 # Feature enabler client
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc

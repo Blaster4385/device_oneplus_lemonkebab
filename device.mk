@@ -30,6 +30,8 @@ $(call inherit-product, vendor/qcom/common/wfd/wfd-vendor.mk)
 # Camera
 #PRODUCT_PACKAGES += SnapdragonCamera2
 
+TARGET_KERNEL_VERSION := 4.19
+
 PRODUCT_BOARD_PLATFORM := kona
 PRODUCT_USES_QCOM_HARDWARE := true
 
@@ -188,13 +190,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-impl-qti.recovery \
     android.hardware.boot@1.1-service \
-    bootctrl.kona \
-    bootctrl.kona.recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
-# Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
@@ -232,10 +227,10 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.oneplus_kona \
-    vendor.oneplus.fingerprint.extension@1.0 \
-    vendor.oneplus.hardware.display@1.0
+#PRODUCT_PACKAGES += \
+    #android.hardware.biometrics.fingerprint@2.3-service.oneplus_kona \
+    #vendor.oneplus.fingerprint.extension@1.0 \
+    #vendor.oneplus.hardware.display@1.0
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -386,8 +381,8 @@ PRODUCT_PACKAGES += \
     qti_telephony_utils.xml \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+#    telephony-ext
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
