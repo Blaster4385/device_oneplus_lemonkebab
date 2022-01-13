@@ -137,7 +137,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
      vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml \
      vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/device_framework_manifest.xml
-DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/android.hardware.vibrator_v1.0.xml
 
