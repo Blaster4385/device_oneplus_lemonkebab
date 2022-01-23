@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/lemonkebab/lemonkebab-vendor.mk)
-$(call inherit-product, vendor/qcom/common/wfd/wfd-vendor.mk)
+#$(call inherit-product, vendor/qcom/common/wfd/wfd-vendor.mk)
 
 # Gcam
 # $(call inherit-product, packages/apps/googlecamera/config.mk)
@@ -363,7 +363,7 @@ PRODUCT_PACKAGES += \
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2 \
-    android.hardware.secure_element@1.2.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -577,6 +577,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3.vendor \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.6.vendor \
+    android.hardware.radio@1.6 \
     android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor \
