@@ -227,10 +227,10 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
-#PRODUCT_PACKAGES += \
-    #android.hardware.biometrics.fingerprint@2.3-service.oneplus_kona \
-    #vendor.oneplus.fingerprint.extension@1.0 \
-    #vendor.oneplus.hardware.display@1.0
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.oneplus_kona \
+    vendor.oneplus.fingerprint.extension@1.0 \
+    vendor.oneplus.hardware.display@1.0
 
 # GNSS
 PRODUCT_PACKAGES += \
