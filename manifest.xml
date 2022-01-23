@@ -116,7 +116,6 @@
         <fqname>@1.2::ISap/slot2</fqname>
         <fqname>@1.5::IRadio/slot1</fqname>
         <fqname>@1.5::IRadio/slot2</fqname>
-        
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
@@ -136,7 +135,6 @@
             <instance>SIM1</instance>
             <instance>eSE1</instance>
         </interface>
-        <fqname>@1.2::ISecureElement/SIM2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.soundtrigger</name>
@@ -220,20 +218,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.nxp.nxpnfc</name>
+        <name>vendor.nxp.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>2.0</version>
         <interface>
-            <name>INxpNfc</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.nxp.nxpese</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>INxpEse</name>
+            <name>INqNfc</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -263,7 +252,6 @@
             <name>IVendorFingerprintExtensions</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IVendorFingerprintExtensions/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.oneplus.hardware.CameraMDMHIDL</name>
@@ -336,7 +324,6 @@
             <name>IOneplusIfaa</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::IOneplusIfaa/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.oneplus.hardware.lmvibrator</name>
@@ -804,7 +791,7 @@
     <hal format="hidl">
         <name>vendor.qti.ims.factory</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>IImsFactory</name>
             <instance>default</instance>
