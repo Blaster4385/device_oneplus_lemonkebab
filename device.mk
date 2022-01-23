@@ -636,5 +636,9 @@ PRODUCT_PACKAGES += \
     libadf.vendor \
     libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libtinyxml.vendor
+    libtinyxml.vendor \
+    extphonelib \
+    extphonelib-product \
+    extphonelib.xml \
+    extphonelib_product.xml \
 
