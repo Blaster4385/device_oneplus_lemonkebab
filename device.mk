@@ -570,6 +570,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.0.vendor \
     android.hardware.radio.config@1.1.vendor \
     android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio@1.0.vendor \
     android.hardware.radio@1.1.vendor \
@@ -577,8 +578,13 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.3.vendor \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio@1.5.vendor \
+    android.hardware.radio@1.5 \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio@1.6 \
+    android.hardware.radio.config@1.3 \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.secure_element@1.2.vendor \
     android.hardware.secure_element@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     android.hardware.secure_element@1.2.vendor \
@@ -624,6 +630,7 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     android.hidl.memory.block@1.0.vendor \
     android.system.net.netd@1.0.vendor \
+    android.system.net.netd@1.1 \
     android.system.net.netd@1.1.vendor \
     android.system.wifi.keystore@1.0.vendor \
     libadf.vendor \
