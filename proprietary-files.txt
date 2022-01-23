@@ -1348,6 +1348,10 @@ vendor/firmware/tp/LIMIT_19821_S3908.img
 vendor/firmware/tp/LIMIT_19821_SY761.img
 vendor/firmware/tp/LIMIT_19821_SY771.img
 
+# Vibrator HAL
+vendor/lib/hw/vibrator.default.so
+vendor/lib64/hw/vibrator.default.so
+
 # Vibrator firmware
 vendor/firmware/100ms_RTP.bin
 vendor/firmware/120ms_RTP.bin
