@@ -203,7 +203,9 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    vendor.oneplus.hardware.display@1.0.vendor
+    vendor.oneplus.hardware.display@1.0.vendor \
+    libwfdaac_vendor \
+    libdisplayconfig.qti
 
 # Doze
 PRODUCT_PACKAGES += \
