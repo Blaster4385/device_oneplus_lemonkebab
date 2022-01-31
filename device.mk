@@ -289,6 +289,7 @@ PRODUCT_PACKAGES += \
     libinit_sm8250 \
     fstab.qcom \
     init.oneplus.camera.rc \
+    init.opcamera.rc \
     init.oneplus.display.rc \
     init.oneplus.fingerprint.rc \
     init.oneplus.haptics.rc \

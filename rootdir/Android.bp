@@ -26,6 +26,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.opcamera.rc",
+    src: "etc/init.opcamera.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.oneplus.display.rc",
     src: "etc/init.oneplus.display.rc",
     sub_dir: "init",
