@@ -11,3 +11,5 @@ allow init hwservicemanager:binder { call };
 allow init proc_touchpanel:file { write open };
 
 allow init adsprpcd_file:file mounton;
+allow init iorapd_data_file:file { getattr };
+allow init system_file:dir { relabelfrom };
