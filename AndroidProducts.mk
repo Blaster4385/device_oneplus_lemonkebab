@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_lemonkebab.mk
+    $(LOCAL_DIR)/corvus_lemonkebab.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_lemonkebab-user \
-    aosp_lemonkebab-userdebug \
-    aosp_lemonkebab-eng
+    corvus_lemonkebab-user \
+    corvus_lemonkebab-userdebug \
+    corvus_lemonkebab-eng
